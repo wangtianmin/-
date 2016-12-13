@@ -1,0 +1,97 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-decoration: none;
+	font-family: arial;
+}
+/*导航部分*/
+#ngv{
+	width: 100%;
+	height: 65px;
+	background-color: black;
+	box-shadow: 0 0 5px;
+}
+#ngv_middle{
+	max-width: 1127px;
+	height: 100%;
+	position: relative;
+	margin: 0 auto;
+}
+@media screen and (min-width: 850px) and (max-width: 1127px) {
+	#ngv{
+		height: 65px;
+	}
+}
+@media screen and (min-width: 600px) and (max-width: 850px) {
+	#ngv{
+		height: 65px;
+	}
+	#ngv_list{
+		display: none;
+	}
+}
+@media screen and (min-width: 320px) and (max-width: 600px) {
+	#ngv{
+		height: 50px;
+	}
+	#ngv_list{
+		display: none;
+	}
+}
+#logo{
+	display: block;
+	width: 150px;
+	height: 33px;
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+}
+#ngv_list{
+	/*width: 800px;*/
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -20px;
+}
+#ngv_list li{
+	float: right;
+	margin-left: 40px;
+	padding: 0 5px;
+	height: 30px;
+	line-height: 30px;
+	
+}
+#ngv_list li a{
+	display: block;
+	color: #ccc;
+	font-size: 16px;
+}
+.active{
+	border: 1px solid #ccc;
+	border-radius: 12px;
+}
+#ngv_list .active a{
+	color: white;
+}
+/*尾部*/
+#footer{
+	width: 100%;
+	padding-top: 45px;
+	padding-bottom: 30px;
+}
+#footer div{
+	text-align: center;
+}
+
+#footer_share{
+	margin-top: 20px;
+}
+#footer_share a{
+	margin-right: 10px;
+}
+#footer_shuzi{
+	margin-top: 30px;
+	font-size: 0.5em;
+	color: gray;
+}

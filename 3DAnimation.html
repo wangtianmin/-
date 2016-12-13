@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/网页头部和尾部.css"/>
+		<link rel="stylesheet" type="text/css" href="css/网页主体4.css"/>
+	</head>
+	<body>
+		<!--导航部分-->
+		<div id="ngv">
+			<div id="ngv_middle">
+				<a href="#" id="logo">
+					<img src="img/logo.png"/>
+				</a>
+				<ul id="ngv_list">
+					<li><a href="http://127.0.0.1:8020/%E5%86%99%E6%84%8F%E8%8B%B1%E6%96%87%E7%BD%91/Contact.html">Contact</a></li>
+					<li><a href="http://127.0.0.1:8020/%E5%86%99%E6%84%8F%E8%8B%B1%E6%96%87%E7%BD%91/Bim.html">Bim</a></li>
+					<li class="active"><a href="http://127.0.0.1:8020/%E5%86%99%E6%84%8F%E8%8B%B1%E6%96%87%E7%BD%91/3DAnimation.html">3D Animation</a></li>
+					<li><a href="http://127.0.0.1:8020/%E5%86%99%E6%84%8F%E8%8B%B1%E6%96%87%E7%BD%91/Rendering.html">Rendering</a></li>
+					<li><a href="http://127.0.0.1:8020/%E5%86%99%E6%84%8F%E8%8B%B1%E6%96%87%E7%BD%91/About.html">About</a></li>
+					<li><a href="http://127.0.0.1:8020/%E5%86%99%E6%84%8F%E8%8B%B1%E6%96%87%E7%BD%91/Home.html">Home</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--主体-->
+		<a id="main_wrap" href="#">
+			<div id="main_middle">
+				<img src="img/chengshi.jpg"/>
+			</div>
+			<div id="main_introduce">
+				<h2>Sichuan Province-Commerical Rea</h2>
+			</div>
+			<div id="main_play">
+				<img src="img/play.png"/>
+			</div>
+		</a>
+		<!--视频列表-->
+		<div id="list_wrap">
+			<ul id="main_list">
+				<li>
+					<a href="#">
+						<img src="img/pload1.jpg"/>
+						<span><img src="img/play_small_h.png"/></span>
+					</a>
+					<div>
+						Commercial Real Estate-2014-10
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/pload8.jpg"/>
+						<span><img src="img/play_small_h.png"/></span>
+					</a>
+					<div>
+						Commercial Real Estate-2014-10
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/pload9.jpg"/>
+						<span><img src="img/play_small_h.png"/></span>
+					</a>
+					<div>
+						Commercial Real Estate-2014-10
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/pload7.jpg"/>
+						<span><img src="img/play_small_h.png"/></span>
+					</a>
+					<div>
+						Commercial Real Estate-2014-10
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/pload6.jpg"/>
+						<span><img src="img/play_small_h.png"/></span>
+					</a>
+					<div>
+						Commercial Real Estate-2014-10
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/pload3.jpg"/>
+						<span><img src="img/play_small_h.png"/></span>
+					</a>
+					<div>
+						Commercial Real Estate-2014-10
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/pload5.jpg"/>
+						<span><img src="img/play_small_h.png"/></span>
+					</a>
+					<div>
+						Commercial Real Estate-2014-10
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/pload4.jpg"/>
+						<span><img src="img/play_small_h.png"/></span>
+					</a>
+					<div>
+						Commercial Real Estate-2014-10
+					</div>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/pload2.jpg"/>
+						<span><img src="img/play_small_h.png"/></span>
+					</a>
+					<div>
+						Commercial Real Estate-2014-10
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--尾部-->
+		<div id="footer">
+			<div id="footer_email">
+				<a href="#"><img src="img/email.png"/></a>
+			</div>
+			<div id="footer_share">
+				<a href="#"><img src="img/facebook.png"/></a>
+				<a href="#"><img src="img/youTube.png"/></a>
+				<a href="#"><img src="img/linkedIn.png"/></a>
+				<a href="#"><img src="img/twitter.png"/></a>
+			</div>
+			<div id="footer_shuzi">Copyright © 1998-2015 shining Group</div>
+		</div>
+	</body>
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/网页头部和尾部.js"></script>
+	<script type="text/javascript">
+		$(function(){
+//			console.log($("#main_list li a"))
+			var index;
+			$("#main_list li a").hover(function(){
+//				$(this).attr({"src":"img/play_small_b.png"})
+				index = $("#main_list li a").index($(this));
+				$("#main_list li a span img").eq(index).attr({"src":"img/play_small_b.png"})
+			},function(){
+				$("#main_list li a span img").eq(index).attr({"src":"img/play_small_h.png"})
+			})
+		})
+	</script>
+</html>

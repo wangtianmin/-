@@ -1,0 +1,99 @@
+#main_wrap{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+#main_middle img{
+	width: 100%;
+	float: left;
+
+}
+#main_list{
+	position: absolute;
+	left: 50%;
+	bottom: 5%;
+	margin-left: -31px;
+	list-style-type: none;
+	
+}
+#main_list li {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #ccc;
+	float: left;
+	margin-right: 10px;
+}
+
+#main_list li.active{
+	background-color: palegreen;
+}
+
+/*瀑布流*/
+#main_wrap2{
+	width: 100%;
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#main_wrap2 ul {
+	padding: 0.5%;
+	width: 25%;
+	list-style-type: none;
+	font-size: 50px;
+	/*border: 1px solid yellow;*/
+	box-sizing: border-box;
+	float: left;
+}
+
+#main_wrap2 ul li{	
+	margin-bottom: 1%;
+}
+
+#main_wrap2 ul li img{
+	width: 100%;
+	height: 100%;
+}
+/*鼠标悬停*/
+#main_wrap2 ul li div img.look_img{
+	/*width: 10%;
+	height: 10%;*/
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	/*margin-left: -17.5px;
+	margin-top: -17.5px;*/
+}
+
+/*点击图片，出现在窗口中间的大图*/
+#bigImg{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);	
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	display: none;
+}
+#bigImg li{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	padding: 15px;
+	background-color: white;
+	z-index: 11;
+}
+#bigImg li img{
+	width: 100%;
+	height: 100%;
+	z-index: 11;
+}
+/*响应式瀑布流*/
+@media screen and (min-width: 320px) and (max-width: 494px) {
+	#main_wrap2 ul {
+		width: 50%;
+	}
+}
